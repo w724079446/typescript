@@ -1,0 +1,100 @@
+{
+  /*
+    ts编译器的配置文件
+    include 用来指定哪些ts文件需要被编译
+    exclude 用来指定哪些ts文件不需要被编译
+    extends 用来指定继承的配置文件
+      默认值:["node_modules","bower_components","jspm_packages"]
+  */
+  "include": [
+    "./src/**/*",
+  ],
+  // "exclude": [
+  //   "./src/utils/**/*"
+  // ],
+  /*
+    编译器的选项
+  */
+  "compilerOptions": {
+    /*
+      target
+      编译后的版本
+      可选值
+      'es3', 'es5', 'es6', 'es2015', 'es2016', 'es2017', 'es2018', 'es2019', 'es2020', 'es2021', 'es2022', 'esnext'*/
+    "target": "es2015",
+    /*
+      module
+      指定要使用的模块化规范
+      可选值
+      'none', 'commonjs', 'amd', 'system', 'umd', 'es6', 'es2015', 'es2020', 'es2022', 'esnext', 'node16', 'nodenext'
+    */
+    "module": "es2015",
+    /*
+      lib
+      用来指定使用哪些库
+      可选值
+      'es5', 'es6', 'es2015', 'es7', 'es2016', 'es2017', 'es2018', 'es2019', 'es2020', 'es2021', 'es2022', 'es2023', 'esnext', 'dom', 'dom.iterable', 'webworker', 'webworker.importscripts', 'webworker.iterable', 'scripthost', 'es2015.core', 'es2015.collection', 'es2015.generator', 'es2015.iterable', 'es2015.promise', 'es2015.proxy', 'es2015.reflect', 'es2015.symbol', 'es2015.symbol.wellknown', 'es2016.array.include', 'es2017.date', 'es2017.object', 'es2017.sharedmemory', 'es2017.string', 'es2017.intl', 'es2017.typedarrays', 'es2018.asyncgenerator', 'es2018.asynciterable', 'es2018.intl', 'es2018.promise', 'es2018.regexp', 'es2019.array', 'es2019.object', 'es2019.string', 'es2019.symbol', 'es2019.intl', 'es2020.bigint', 'es2020.date', 'es2020.promise', 'es2020.sharedmemory', 'es2020.string', 'es2020.symbol.wellknown', 'es2020.intl', 'es2020.number', 'es2021.promise', 'es2021.string', 'es2021.weakref', 'es2021.intl', 'es2022.array', 'es2022.error', 'es2022.intl', 'es2022.object', 'es2022.sharedmemory', 'es2022.string', 'es2022.regexp', 'es2023.array', 'es2023.collection', 'esnext.array', 'esnext.collection', 'esnext.symbol', 'esnext.asynciterable', 'esnext.intl', 'esnext.disposable', 'esnext.bigint', 'esnext.string', 'esnext.promise', 'esnext.weakref', 'esnext.decorators', 'decorators', 'decorators.legacy'
+    */
+    // "lib": []
+    /*
+      outDir
+      用来指定编译后文件所在的目录
+    */
+    // "outDir": "./dist",
+    /*
+      outFile
+      将代码打包成一个文件
+    */
+    // "outFile": "./dist/app.js",
+    /*
+      allowJs
+      用来指定是否对js文件进行编译 默认是 false
+    */
+    "allowJs": true,
+    /*
+      checkJs
+      用来指定是否检查js代码是否符合语法规范 默认是 false
+    */
+    "checkJs": true,
+    /*
+      removeComments
+      用来指定是否将编译后的文件中的注释删掉 默认是 false
+    */
+    "removeComments": false,
+    /*
+      noEmit
+      用来指定是否不生成编译后的文件 默认是 false
+    */
+    "noEmit": false,
+    /*
+      noEmitOnError
+      用来指定当有错误的时候是否不生成编译后的文件 默认是 false
+    */
+    "noEmitOnError": true,
+    /*
+      strict
+      用来指定是否使用严格模式 默认是 false
+    */
+    "strict": true,
+    /*
+      alwaysStrict
+      用来指定编译后的文件是否使用严格模式 默认是 false
+    */
+    "alwaysStrict": true,
+    /*
+      noImplicitAny
+      用来指定是否默认禁用 any 类型 默认是 false
+    */
+    "noImplicitAny": false,
+    /*
+      noImplicitThis
+      用来指定是否默认禁用 this 类型的检查 默认是 false
+    */
+    "noImplicitThis": true,
+    /*
+      strictNullChecks
+      用来指定是否严格检查 null或undefined 默认是 false
+    */
+    "strictNullChecks": true,
+  }
+}
